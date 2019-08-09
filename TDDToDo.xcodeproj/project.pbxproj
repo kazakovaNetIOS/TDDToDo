@@ -14,6 +14,8 @@
 		FF06916322FE17FA00023838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF06916122FE17FA00023838 /* LaunchScreen.storyboard */; };
 		FF06916E22FE17FA00023838 /* TDDToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06916D22FE17FA00023838 /* TDDToDoTests.swift */; };
 		FF06917922FE17FA00023838 /* TDDToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06917822FE17FA00023838 /* TDDToDoUITests.swift */; };
+		FF06918B22FE19FC00023838 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06918A22FE19FC00023838 /* TaskTests.swift */; };
+		FF06918E22FE1B3100023838 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06918D22FE1B3100023838 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FF06917422FE17FA00023838 /* TDDToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF06917822FE17FA00023838 /* TDDToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDToDoUITests.swift; sourceTree = "<group>"; };
 		FF06917A22FE17FA00023838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF06918A22FE19FC00023838 /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		FF06918D22FE1B3100023838 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,10 @@
 		FF06915722FE17F500023838 /* TDDToDo */ = {
 			isa = PBXGroup;
 			children = (
-				FF06915822FE17F500023838 /* AppDelegate.swift */,
-				FF06915A22FE17F500023838 /* ViewController.swift */,
-				FF06915C22FE17F500023838 /* Main.storyboard */,
-				FF06915F22FE17FA00023838 /* Assets.xcassets */,
-				FF06916122FE17FA00023838 /* LaunchScreen.storyboard */,
-				FF06916422FE17FA00023838 /* Info.plist */,
+				FF06918822FE194200023838 /* Controller */,
+				FF06918722FE193B00023838 /* View */,
+				FF06918622FE193300023838 /* Model */,
+				FF06918922FE195600023838 /* Supporting files */,
 			);
 			path = TDDToDo;
 			sourceTree = "<group>";
@@ -112,6 +114,7 @@
 			children = (
 				FF06916D22FE17FA00023838 /* TDDToDoTests.swift */,
 				FF06916F22FE17FA00023838 /* Info.plist */,
+				FF06918C22FE1A0500023838 /* Model */,
 			);
 			path = TDDToDoTests;
 			sourceTree = "<group>";
@@ -123,6 +126,49 @@
 				FF06917A22FE17FA00023838 /* Info.plist */,
 			);
 			path = TDDToDoUITests;
+			sourceTree = "<group>";
+		};
+		FF06918622FE193300023838 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF06918D22FE1B3100023838 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF06918722FE193B00023838 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF06918822FE194200023838 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF06915A22FE17F500023838 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF06918922FE195600023838 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				FF06915822FE17F500023838 /* AppDelegate.swift */,
+				FF06915C22FE17F500023838 /* Main.storyboard */,
+				FF06915F22FE17FA00023838 /* Assets.xcassets */,
+				FF06916122FE17FA00023838 /* LaunchScreen.storyboard */,
+				FF06916422FE17FA00023838 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		FF06918C22FE1A0500023838 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF06918A22FE19FC00023838 /* TaskTests.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF06915B22FE17F500023838 /* ViewController.swift in Sources */,
+				FF06918E22FE1B3100023838 /* Task.swift in Sources */,
 				FF06915922FE17F500023838 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF06918B22FE19FC00023838 /* TaskTests.swift in Sources */,
 				FF06916E22FE17FA00023838 /* TDDToDoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLVL4AD94D;
-				INFOPLIST_FILE = TDDToDo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TDDToDo/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLVL4AD94D;
-				INFOPLIST_FILE = TDDToDo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TDDToDo/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
