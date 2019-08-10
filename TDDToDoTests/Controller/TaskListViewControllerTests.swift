@@ -11,21 +11,40 @@ import XCTest
 
 class TaskListViewControllerTests: XCTestCase {
 
+    var sut: TaskListViewController!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "\(TaskListViewController.self)")
+        sut = vc as? TaskListViewController
+        
+        sut.loadViewIfNeeded()
     }
     
     override func tearDown() {
-        
+        sut = nil
     }
     
-    func testTableViewNotNilWhenViewIsLoaded() {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "\(TaskListViewController.self)")
-        let sut = vc as! TaskListViewController
-        
-        sut.loadViewIfNeeded()
-        
+    func testWhenViewIsLoadedTableViewNotNil() {
         XCTAssertNotNil(sut.tableView)
+    }
+    
+    func testWhenViewIsLoadedDataProviderIsNotNil() {
+        XCTAssertNotNil(sut.dataProvider)
+    }
+    
+    func testWhenViewIsLoadedTableViewDelegateIsSet() {
+        XCTAssertNotNil(sut.tableView.delegate)
+    }
+    
+    func testWhenViewIsLoadedTableViewDataSourceIsSet() {
+        XCTAssertNotNil(sut.tableView.dataSource)
+    }
+    
+    func testWhenViewIsLoadedTableViewDelegateEqualsTableViewDataSource() {
+        XCTAssertEqual(
+            sut.tableView.delegate as? DataProvider,
+            sut.tableView.dataSource as? DataProvider
+        )
     }
 }

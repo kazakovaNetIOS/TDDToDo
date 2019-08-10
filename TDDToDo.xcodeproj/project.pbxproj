@@ -21,6 +21,7 @@
 		FF06919522FE2A1B00023838 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06919422FE2A1B00023838 /* TaskManagerTests.swift */; };
 		FF06919822FE2A7D00023838 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06919722FE2A7D00023838 /* TaskManager.swift */; };
 		FF0691A222FF702800023838 /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0691A122FF702800023838 /* TaskListViewControllerTests.swift */; };
+		FF0691A422FF78BD00023838 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0691A322FF78BD00023838 /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		FF06919422FE2A1B00023838 /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
 		FF06919722FE2A7D00023838 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		FF0691A122FF702800023838 /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
+		FF0691A322FF78BD00023838 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				FF06915A22FE17F500023838 /* TaskListViewController.swift */,
+				FF0691A322FF78BD00023838 /* DataProvider.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0691A422FF78BD00023838 /* DataProvider.swift in Sources */,
 				FF06915B22FE17F500023838 /* TaskListViewController.swift in Sources */,
 				FF06918E22FE1B3100023838 /* Task.swift in Sources */,
 				FF06919822FE2A7D00023838 /* TaskManager.swift in Sources */,
