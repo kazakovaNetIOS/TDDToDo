@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TaskListViewController.swift
 //  TDDToDo
 //
 //  Created by Natalia Kazakova on 10/08/2019.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class TaskListViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
 
